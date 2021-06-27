@@ -1,7 +1,6 @@
-# import jsonschema
-# import requests
-# from decouple import config
-import jsonschema as jsonschema
+import jsonschema
+import requests
+from decouple import config
 from flask import request, Response
 from flask_jsonschema_validator import JSONSchemaValidator
 
@@ -19,7 +18,8 @@ def routes(app):
             message = f"[{evt} - {bot}] a execução {execution} terminou com erros."
         else:
             message = f"[{evt} - {bot}] a execução {execution} terminou com sucesso."
-        # requests.post(config('WEBHOOK_SITE'), data=message)
+        requests.post(config('WEBHOOK_SITE', default='https://webhook.site/115e0920-2466-4523-a6ac-c514bb3ac0c1'),
+                      data=message)
         return message
 
     @app.errorhandler(jsonschema.ValidationError)
