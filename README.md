@@ -19,7 +19,6 @@ pip install -r requirements.txt
 cp contrib/env-sample .env
 crie um novo webhook em https://webhook.site/
 coloque a url do webhook na variável de ambiente WEBHOOK_SITE=
-pytest -v --cov=oystr_codetest_services
 ```
 
 ## Rodar projeto
@@ -37,7 +36,8 @@ O `POST` deve ser feito para: ` http://127.0.0.1:5000/notification`
 
 [![Run in Insomnia}](https://insomnia.rest/images/run.svg)](https://insomnia.rest/run/?label=Run%20in%20Insomnia&uri=https%3A%2F%2Fraw.githubusercontent.com%2Fniltonpimentel02%2Foystr%2Fmain%2Finsomnia.json)
 
-## Pytest relatório
+## Pytest
+Para gerar o relatório de cobertura do código abaixo `pytest -v --cov=oystr tests/`
 
 ```console
 ----------- coverage: platform linux, python 3.9.0-final-0 -----------
