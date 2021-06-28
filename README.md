@@ -41,13 +41,9 @@ Para gerar o relatório de cobertura do código abaixo: `pytest -v --cov=oystr t
 
 ```console
 ----------- coverage: platform linux, python 3.9.0-final-0 -----------
-Name                         Stmts   Miss  Cover
-------------------------------------------------
-__init__.py                      0      0   100%
-app.py                           6      6     0%
-execution_process.py            21      0   100%
-tests/__init__.py                0      0   100%
-tests/test_post_webhook.py      34      0   100%
-------------------------------------------------
-TOTAL                           61      6    90%
+Name                   Stmts   Miss     Cover
+---------------------------------------------
+execution_process.py      21      0   100.00%
+---------------------------------------------
+TOTAL                     21      0   100.00%
 ```
