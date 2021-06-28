@@ -1,0 +1,10 @@
+[run]
+#ignore all settings
+omit =
+    *tests/*
+    *__init__*
+    *.venv*
+    *app.py*
+
+[report]
+precision = 2
