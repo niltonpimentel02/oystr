@@ -33,6 +33,10 @@ flask run
 
 O `POST` deve ser feito para: ` http://127.0.0.1:5000/notification`
 
+## Insomnia test
+
+[![Run in Insomnia}](https://insomnia.rest/images/run.svg)](https://insomnia.rest/run/?label=Run%20in%20Insomnia&uri=https%3A%2F%2Fraw.githubusercontent.com%2Fniltonpimentel02%2Foystr%2Fmain%2Finsomnia.json)
+
 ## Pytest relatório
 
 ```console
